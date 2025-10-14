@@ -6,7 +6,7 @@ movimientos=[
     {numeroCuenta:"02345211",monto:12.0,tipo:"D"},
 ]
 
-cargar=function(){
+cargar1=function(){
     mostrarComponente("divMovimientos");
     ocultarComponente("divCuentas");
     ocultarComponente("divTransacciones");

@@ -3,7 +3,7 @@ cuentas=[
     {numeroCuenta:"02345211",cedula:"1281238233",nombre:"Felipe",apellido:"Caicedo",saldo:0.0}
 ]
 
-cargar=function(){
+cargar2=function(){
     mostrarComponente("divTransacciones");
     ocultarComponente("divCuentas");
     ocultarComponente("divMovimientos");
