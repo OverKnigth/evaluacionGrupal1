@@ -93,3 +93,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.tabla{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla td{
+    padding: 10px;
+    border: 1px solid #010000;
+}
+
+.tabla th{
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.tabla table{
+    border-collapse: collapse;
+    border: 1px solid #000000;
+}
+
+

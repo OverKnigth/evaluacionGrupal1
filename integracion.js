@@ -11,8 +11,6 @@ movimientos=[
     {numeroCuenta:"02345211",monto:12.0,tipo:"D"},
 ]
 
-
-
 cargar=function(){
     mostrarComponente("divCuentas");
     ocultarComponente("divMovimientos");
