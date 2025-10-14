@@ -21,7 +21,7 @@ cargar2=function(){
     Busca la cuenta en el arreglo en función del número de cuenta,
     si existe retorna el objeto cuenta, caso contrario retorna null. 
 */
-buscarCuenta=function(numeroCuenta){
+buscarCuentaTransacciones=function(numeroCuenta){
 
     for (let i = 0; i < cuentas.length; i++) {
         if (numeroCuenta == cuentas[i].numeroCuenta) {
@@ -33,7 +33,7 @@ buscarCuenta=function(numeroCuenta){
 
 ejecutarBusqueda=function(){
     let numeroCuentaBuscada = recuperarTexto("buscarCuenta");
-    let empleado = buscarCuenta(numeroCuentaBuscada);
+    let empleado = buscarCuentaTransacciones(numeroCuentaBuscada);
     if (empleado === null) {
         alert("El empleado no existe.");
         mostrarTextoEnCaja("cedula", " ");
@@ -70,7 +70,7 @@ ejecutarDeposito=function(){
 }
 
 depositar=function(numeroCuenta,montoASumar){
-    let cuentaAfectada = buscarCuenta(numeroCuenta);
+    let cuentaAfectada = buscarCuentaTransacciones(numeroCuenta);
     
     if(cuentaAfectada!== null && montoASumar > 0 && !isNaN(montoASumar) ){
         cuentaAfectada.saldo += montoASumar;
@@ -85,7 +85,7 @@ depositar=function(numeroCuenta,montoASumar){
 }
 
 retirar=function(numeroCuenta,monto){
-    let cuentaAfectada = buscarCuenta(numeroCuenta);
+    let cuentaAfectada = buscarCuentaTransacciones(numeroCuenta);
     if(cuentaAfectada!== null && monto > 0 &&!isNaN(monto) && cuentaAfectada.saldo >= monto){
         cuentaAfectada.saldo -= monto;
         alert("TRANSACCION EXITOSA");

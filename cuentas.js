@@ -68,7 +68,7 @@ agregarCuenta=function(cuenta){
     }
 }
 
-agregar=function(){
+ejecutarAgregarCuenta=function(){
     //Toma los valores de las cajas de texto, sin validaciones
     //Crea un objeto cuenta y agrega los atributos con los valores de las cajas respectivas
     //Invoca a agregarCuenta

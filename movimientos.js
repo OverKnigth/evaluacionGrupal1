@@ -13,7 +13,7 @@ cargar1=function(){
     
 }
 
-prueba = function(){
+pruebaMovimientos = function(){
     let numCuenta = recuperarTexto("txtMovimiento");
     filtrarMovimientos(numCuenta);
 }
